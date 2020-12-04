@@ -15,6 +15,9 @@
 		C43CE18A257AC94800B4FCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43CE188257AC94800B4FCA1 /* LaunchScreen.storyboard */; };
 		C43CE195257AC94800B4FCA1 /* ios_nbaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE194257AC94800B4FCA1 /* ios_nbaTests.swift */; };
 		C43CE1A0257AC94800B4FCA1 /* ios_nbaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE19F257AC94800B4FCA1 /* ios_nbaUITests.swift */; };
+		C43CE1BA257ACAB600B4FCA1 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE1B9257ACAB600B4FCA1 /* Players.swift */; };
+		C43CE1D7257AD3C300B4FCA1 /* NBAPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE1D6257AD3C300B4FCA1 /* NBAPlayerService.swift */; };
+		C43CE1DD257AD4CE00B4FCA1 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE1DC257AD4CE00B4FCA1 /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C43CE19B257AC94800B4FCA1 /* ios-nbaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-nbaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43CE19F257AC94800B4FCA1 /* ios_nbaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_nbaUITests.swift; sourceTree = "<group>"; };
 		C43CE1A1257AC94800B4FCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43CE1B9257ACAB600B4FCA1 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		C43CE1D6257AD3C300B4FCA1 /* NBAPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAPlayerService.swift; sourceTree = "<group>"; };
+		C43CE1DC257AD4CE00B4FCA1 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		C43CE17C257AC94400B4FCA1 /* ios-nba */ = {
 			isa = PBXGroup;
 			children = (
+				C43CE1DB257AD4C300B4FCA1 /* Constants */,
+				C43CE1B8257ACA8D00B4FCA1 /* Models */,
 				C43CE1B4257AC98C00B4FCA1 /* Services */,
 				C43CE1B3257AC98500B4FCA1 /* Helpers */,
 				C43CE1B2257AC97900B4FCA1 /* Storyboards */,
@@ -164,8 +172,25 @@
 		C43CE1B4257AC98C00B4FCA1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C43CE1D6257AD3C300B4FCA1 /* NBAPlayerService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C43CE1B8257ACA8D00B4FCA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C43CE1B9257ACAB600B4FCA1 /* Players.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C43CE1DB257AD4C300B4FCA1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C43CE1DC257AD4CE00B4FCA1 /* APIConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,9 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43CE1BA257ACAB600B4FCA1 /* Players.swift in Sources */,
 				C43CE182257AC94400B4FCA1 /* ViewController.swift in Sources */,
+				C43CE1DD257AD4CE00B4FCA1 /* APIConstants.swift in Sources */,
 				C43CE17E257AC94400B4FCA1 /* AppDelegate.swift in Sources */,
 				C43CE180257AC94400B4FCA1 /* SceneDelegate.swift in Sources */,
+				C43CE1D7257AD3C300B4FCA1 /* NBAPlayerService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,8 +504,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CH8XJS4375;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-nba/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,6 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.derekquinn.ios-nba";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -495,8 +525,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CH8XJS4375;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "ios-nba/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -504,6 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.derekquinn.ios-nba";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

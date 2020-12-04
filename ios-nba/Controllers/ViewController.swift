@@ -5,7 +5,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        NBAPlayerService.getPlayers(parameters: "", completion:{ playerBaseResponse in
+            
+            print(playerBaseResponse.players[0].first_name)
+            
+        })
     }
 
 
