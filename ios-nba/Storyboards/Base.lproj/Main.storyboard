@@ -15,13 +15,28 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eRE-4r-QDl">
+                                <rect key="frame" x="0.0" y="65" width="414" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eRE-4r-QDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kv5-6W-gt1"/>
+                            <constraint firstItem="eRE-4r-QDl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pg4-Tn-dac"/>
+                            <constraint firstItem="eRE-4r-QDl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="bsX-4C-ThH"/>
+                            <constraint firstItem="eRE-4r-QDl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fwf-NR-l1X"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playerTable" destination="eRE-4r-QDl" id="TRC-Bq-Gdk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
