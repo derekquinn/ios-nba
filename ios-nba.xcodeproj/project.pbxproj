@@ -15,7 +15,7 @@
 		C43CE185257AC94400B4FCA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43CE183257AC94400B4FCA1 /* Main.storyboard */; };
 		C43CE187257AC94800B4FCA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43CE186257AC94800B4FCA1 /* Assets.xcassets */; };
 		C43CE18A257AC94800B4FCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43CE188257AC94800B4FCA1 /* LaunchScreen.storyboard */; };
-		C43CE195257AC94800B4FCA1 /* ios_nbaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE194257AC94800B4FCA1 /* ios_nbaTests.swift */; };
+		C43CE195257AC94800B4FCA1 /* apiHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE194257AC94800B4FCA1 /* apiHelperTests.swift */; };
 		C43CE1A0257AC94800B4FCA1 /* ios_nbaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE19F257AC94800B4FCA1 /* ios_nbaUITests.swift */; };
 		C43CE1BA257ACAB600B4FCA1 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE1B9257ACAB600B4FCA1 /* Players.swift */; };
 		C43CE1D7257AD3C300B4FCA1 /* NBAPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE1D6257AD3C300B4FCA1 /* NBAPlayerService.swift */; };
@@ -51,7 +51,7 @@
 		C43CE189257AC94800B4FCA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C43CE18B257AC94800B4FCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C43CE190257AC94800B4FCA1 /* ios-nbaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-nbaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C43CE194257AC94800B4FCA1 /* ios_nbaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_nbaTests.swift; sourceTree = "<group>"; };
+		C43CE194257AC94800B4FCA1 /* apiHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiHelperTests.swift; sourceTree = "<group>"; };
 		C43CE196257AC94800B4FCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C43CE19B257AC94800B4FCA1 /* ios-nbaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-nbaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43CE19F257AC94800B4FCA1 /* ios_nbaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_nbaUITests.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		C43CE193257AC94800B4FCA1 /* ios-nbaTests */ = {
 			isa = PBXGroup;
 			children = (
-				C43CE194257AC94800B4FCA1 /* ios_nbaTests.swift */,
+				C43CE194257AC94800B4FCA1 /* apiHelperTests.swift */,
 				C43CE196257AC94800B4FCA1 /* Info.plist */,
 			);
 			path = "ios-nbaTests";
@@ -344,7 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C43CE195257AC94800B4FCA1 /* ios_nbaTests.swift in Sources */,
+				C43CE195257AC94800B4FCA1 /* apiHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
