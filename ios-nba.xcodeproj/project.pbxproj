@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C42A7883257F1A75000CAE68 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A7882257F1A75000CAE68 /* UIConstants.swift */; };
 		C43CE17E257AC94400B4FCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE17D257AC94400B4FCA1 /* AppDelegate.swift */; };
 		C43CE180257AC94400B4FCA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE17F257AC94400B4FCA1 /* SceneDelegate.swift */; };
 		C43CE182257AC94400B4FCA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE181257AC94400B4FCA1 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C42A7882257F1A75000CAE68 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		C43CE17A257AC94400B4FCA1 /* ios-nba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-nba.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43CE17D257AC94400B4FCA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C43CE17F257AC94400B4FCA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				C43CE1DC257AD4CE00B4FCA1 /* APIConstants.swift */,
+				C42A7882257F1A75000CAE68 /* UIConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				C43CE1BA257ACAB600B4FCA1 /* Players.swift in Sources */,
 				C43CE182257AC94400B4FCA1 /* ViewController.swift in Sources */,
 				C43CE1DD257AD4CE00B4FCA1 /* APIConstants.swift in Sources */,
+				C42A7883257F1A75000CAE68 /* UIConstants.swift in Sources */,
 				C43CE17E257AC94400B4FCA1 /* AppDelegate.swift in Sources */,
 				C43CE180257AC94400B4FCA1 /* SceneDelegate.swift in Sources */,
 				C43CE1D7257AD3C300B4FCA1 /* NBAPlayerService.swift in Sources */,
@@ -506,7 +510,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CH8XJS4375;
 				INFOPLIST_FILE = "ios-nba/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,7 +531,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CH8XJS4375;
 				INFOPLIST_FILE = "ios-nba/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
