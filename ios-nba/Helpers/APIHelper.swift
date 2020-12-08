@@ -3,27 +3,34 @@ import Foundation
 
 class APIHelper {
     
-    static var allPlayerNames: [String] = []
+    static var allPlayers: [PlayerBaseResponse.Player] = []
     
-    static func convertPlayerResponsesToArray(completion: @escaping ([String]) -> Void) {
+    static func convertPlayerResponsesToArray(completion: @escaping ([PlayerBaseResponse.Player]) -> Void) {
         
         var playerData: PlayerBaseResponse!
         
         for i in 1...33 {
             
-            NBAPlayerService.getPlayers(parameters: "?page=\(i)&per_page=100", completion:{ playerBaseResponse in
+            let pageNumberParameter = self.createPageParameter(pageNumber: i)
+            
+            NBAPlayerService.getPlayers(parameters: pageNumberParameter, completion:{ playerBaseResponse in
                 
                 playerData = playerBaseResponse
+                self.allPlayers.append(contentsOf: playerData.players)
+                
                 DispatchQueue.main.async{
                     
-                    for player in playerData.players {
-                        if let firstName = player.firstName, let lastName = player.lastName {
-                            allPlayerNames.append("\(firstName) \(lastName)")
-                        }
-                    }
-                    completion(allPlayerNames)
+                    completion(allPlayers)
+                    
                 }
             })
         }
+    }
+    
+    static func createPageParameter(pageNumber: Int) -> String {
+        
+        let parameter: String = "?page=\(pageNumber)&per_page=100"
+        
+        return parameter
     }
 }
