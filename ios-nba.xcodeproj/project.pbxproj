@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C42A7883257F1A75000CAE68 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A7882257F1A75000CAE68 /* UIConstants.swift */; };
+		C42A788B257F22EF000CAE68 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A788A257F22EF000CAE68 /* APIHelper.swift */; };
 		C43CE17E257AC94400B4FCA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE17D257AC94400B4FCA1 /* AppDelegate.swift */; };
 		C43CE180257AC94400B4FCA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE17F257AC94400B4FCA1 /* SceneDelegate.swift */; };
 		C43CE182257AC94400B4FCA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43CE181257AC94400B4FCA1 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		C42A7882257F1A75000CAE68 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		C42A788A257F22EF000CAE68 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		C43CE17A257AC94400B4FCA1 /* ios-nba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-nba.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43CE17D257AC94400B4FCA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C43CE17F257AC94400B4FCA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		C43CE1B3257AC98500B4FCA1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C42A788A257F22EF000CAE68 /* APIHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				C43CE182257AC94400B4FCA1 /* ViewController.swift in Sources */,
 				C43CE1DD257AD4CE00B4FCA1 /* APIConstants.swift in Sources */,
 				C42A7883257F1A75000CAE68 /* UIConstants.swift in Sources */,
+				C42A788B257F22EF000CAE68 /* APIHelper.swift in Sources */,
 				C43CE17E257AC94400B4FCA1 /* AppDelegate.swift in Sources */,
 				C43CE180257AC94400B4FCA1 /* SceneDelegate.swift in Sources */,
 				C43CE1D7257AD3C300B4FCA1 /* NBAPlayerService.swift in Sources */,

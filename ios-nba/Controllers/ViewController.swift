@@ -11,21 +11,11 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
         configureNameTable()
-        NBAPlayerService.getPlayers(parameters: "", completion:{ playerBaseResponse in
+        
+        APIHelper.convertPlayerResponsesToArray(completion: { allPlayerNames in
             
-            self.playersTableData = playerBaseResponse
-            
-            // Exposing downsides of old school MVC below (threading, if /let)
-            DispatchQueue.main.async { [self] in
-                
-                for player in self.playersTableData.players {
-                    
-                    if let firstName = player.firstName, let lastName = player.lastName {
-                        self.playerFirstLastNames.append("\(firstName) \(lastName)")
-                    }
-                }
-                self.playerTable.reloadData()
-            }
+            self.playerFirstLastNames = allPlayerNames
+            self.playerTable.reloadData()
         })
     }
     
@@ -46,11 +36,5 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         cell.textLabel?.text = playerFirstLastNames[indexPath.row]
         return cell
     }
-    
-    // Determine which row is selected (tapped)
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        performSegue(withIdentifier: "showDetails", sender: self)
-    }
-    
 }
 
